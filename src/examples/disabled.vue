@@ -5,6 +5,7 @@
             :attribute.sync="attribute"
             :sku.sync="sku"
             :disabled="true"
+            :theme="2"
         />
         <el-row type="flex" :gutter="20">
             <el-col>

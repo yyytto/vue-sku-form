@@ -6,6 +6,7 @@
             :structure="structure"
             :attribute.sync="attribute"
             :sku.sync="sku"
+            :theme="2"
         />
         <el-button type="primary" style="margin-top: 10px;" @click="submit">提交</el-button>
         <el-row type="flex" :gutter="20">

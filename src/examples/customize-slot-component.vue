@@ -6,6 +6,7 @@
             :structure="structure"
             :attribute.sync="attribute"
             :sku.sync="sku"
+            :theme="2"
         >
             <template #score="slotProps">
                 <div>

@@ -6,6 +6,7 @@
             :structure="structure"
             :attribute.sync="attribute"
             :sku.sync="sku"
+            :theme="2"
         />
         <el-button type="primary" style="margin-top: 10px;" @click="clear">清除验证结果</el-button>
         <el-button type="primary" style="margin-top: 10px;" @click="check('price')">验证价格</el-button>

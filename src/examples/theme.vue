@@ -5,6 +5,7 @@
             :attribute.sync="attribute"
             :sku.sync="sku"
             :theme="theme"
+            
         />
         <el-button type="primary" style="margin-top: 10px;" @click="switchTheme">切换主题</el-button>
         <el-row type="flex" :gutter="20">
@@ -36,7 +37,7 @@ export default {
             ],
             attribute: [],
             sku: [],
-            theme: 1
+            theme: 2
         }
     },
     methods: {

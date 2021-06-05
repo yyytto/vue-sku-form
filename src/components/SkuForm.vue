@@ -10,11 +10,17 @@
                     </el-input>
                 </el-card>
             </div>
-            <el-table v-else :data="myAttribute" :show-header="false" class="theme-2">
+            <el-table v-else :data="myAttribute" :show-header="false" class="theme-2" border>
                 <el-table-column prop="name" width="120" :resizable="false" />
                 <el-table-column>
                     <template slot-scope="scope">
-                        <el-checkbox v-for="(item2, index2) in scope.row.item" :key="index2" v-model="item2.checked" :label="item2.name" size="small" />
+                        <el-popover
+                            placement="bottom"
+                            width="500"
+                            trigger="click">
+                            <el-checkbox v-for="(item2, index2) in scope.row.item" :key="index2" v-model="item2.checked" :label="item2.name" size="small"  style="width:25%"/>
+                            <div slot="reference" style="width:100%;border:0">click 激活</div>
+                        </el-popover>   
                     </template>
                 </el-table-column>
                 <el-table-column width="250">
